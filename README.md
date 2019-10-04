@@ -6,7 +6,7 @@
 - [Imagen en escala de grises](#imagen-en-escala-de-grises)
 - [NSSortDescriptor ordenar con número un string](#NSSortDescriptor-ordenar-con-número-un-string)
 - [UIAlertController: style action sheet](#UIAlertController-style-action-sheet)
-
+- [UIAlertController: style alert](#UIAlertController-style-alert)
 
 ## Refrescar celda
 
@@ -78,3 +78,28 @@ UIAlertController *alertController = [UIAlertController
 		[self presentViewController:alertController animated:YES completion:nil];
 ```
 
+## UIAlertController: style alert
+
+```
+-(void)mostrarAviso {
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:NSLocalizedString(@"Título", nil)
+                                  message:NSLocalizedString(@"Mensaje", nil)
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* okButton = [UIAlertAction
+                                actionWithTitle:NSLocalizedString(@"Ok", nil)
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action)
+                                {
+                                    
+                                    [alert dismissViewControllerAnimated:YES completion:nil];
+                                    
+                                }];
+    [alert addAction:okButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+```
