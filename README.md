@@ -30,12 +30,12 @@
 ```
 NSArray *sortedArray;
 sortedArray = [listado sortedArrayUsingComparator:(NSComparator)^(id a, id b) {
-Modelo *modelo1 = a;
-Modelo *modelo2 = b;
-NSNumber *num1 = [NSNumber numberWithInt:[modelo1.stringAComparar intValue]];
-NSNumber *num2 = [NSNumber numberWithInt:[modelo2.stringAComparar intValue]];
+	Modelo *modelo1 = a;
+	Modelo *modelo2 = b;
+	NSNumber *num1 = [NSNumber numberWithInt:[modelo1.stringAComparar intValue]];
+	NSNumber *num2 = [NSNumber numberWithInt:[modelo2.stringAComparar intValue]];
 
-return [num2 compare:num1];
+	return [num2 compare:num1];
 }];
 listado = [sortedArray mutableCopy];
 ```
