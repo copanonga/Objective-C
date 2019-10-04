@@ -5,7 +5,7 @@
 - [Refrescar celda](#refrescar-celda)
 - [Imagen en escala de grises](#imagen-en-escala-de-grises)
 - [NSSortDescriptor ordenar con número un string](#NSSortDescriptor-ordenar-con-número-un-string)
-- [UIAlertController: style action sheet](#UIAlertController:-style-action-sheet)
+- [UIAlertController: style action sheet](#UIAlertController-style-action-sheet)
 
 
 ## Refrescar celda
